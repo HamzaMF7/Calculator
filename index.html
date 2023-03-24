@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta class="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="result" readonly>
+      <div class="row">
+        <button class="light-gray" onclick="clearResult()">AC</button>
+        <button class="light-gray" onclick="backspace()">C</button>
+        <button class="light-gray">%</button>
+        <button class="orange" onclick="addToResult('/')">÷</button>
+      </div>
+      <div class="row">
+        <button onclick="addToResult('7')">7</button>
+        <button onclick="addToResult('8')">8</button>
+        <button onclick="addToResult('9')">9</button>
+        <button class="orange" onclick="addToResult('*')">x</button>
+      </div>
+      <div class="row">
+        <button onclick="addToResult('4')">4</button>
+        <button onclick="addToResult('5')">5</button>
+        <button onclick="addToResult('6')">6</button>
+        <button class="orange" onclick="addToResult('-')">-</button>
+      </div>
+      <div class="row">
+        <button onclick="addToResult('1')">1</button>
+        <button onclick="addToResult('2')">2</button>
+        <button onclick="addToResult('3')">3</button>
+        <button class="orange" onclick="addToResult('+')">+</button>
+      </div>
+      <div class="row">
+        <button class="zero" onclick="addToResult('0')">0</button>
+        <button onclick="addToResult('.')">.</button>
+        <button class="orange" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
